@@ -1,0 +1,13 @@
+VISION RP — إعداد Firebase
+
+1) أنشئ مشروعاً من Firebase Console.
+2) أضف تطبيق Web من Project settings وانسخ قيم Firebase config.
+3) من Build > Authentication > Get started > Sign-in method فعّل Email/Password.
+4) من Build > Firestore Database أنشئ قاعدة بيانات.
+5) انسخ .env.example إلى .env وأدخل القيم: API_KEY وAUTH_DOMAIN وPROJECT_ID وSTORAGE_BUCKET وMESSAGING_SENDER_ID وAPP_ID.
+6) انشر قواعد firestore.rules قبل استخدام قاعدة البيانات.
+7) نفّذ npm install ثم npm run build لاختبار البناء محلياً.
+
+للنشر على Firebase Hosting: انسخ .firebaserc.example إلى .firebaserc وضع Project ID، ثم نفّذ npm run build وبعده firebase deploy --only hosting,firestore:rules.
+
+تنبيه: لا تضع Service Account أو Admin private key في ملفات الواجهة. إعدادات Firebase Web ليست بديلاً عن قواعد Firestore؛ استخدم القواعد المرفقة التي تمنع كل لاعب من قراءة أو تعديل بيانات لاعب آخر.

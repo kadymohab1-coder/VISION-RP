@@ -1,0 +1,8 @@
+{
+  "name": "VISION ROLEPLAY — MOHAB LIFE",
+  "description": "لعبة عالم مفتوح ثلاثية الأبعاد واقعية (PBR) بنظام رول بلاي متكامل: وظائف، اقتصاد، معرض سيارات، شرطة، مستشفى، وهاتف تفاعلي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
