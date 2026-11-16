@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>OpenRP — Rules & privacy</title>
+    <meta name="theme-color" content="#151a1b" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #151a1b;
+        color: #e9e8dc;
+        font:
+          17px/1.65 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 780px;
+        padding: 64px 26px;
+        margin: auto;
+      }
+      a {
+        color: #d9b67c;
+      }
+      h1 {
+        font-size: clamp(36px, 8vw, 65px);
+        line-height: 1.05;
+        letter-spacing: -2px;
+      }
+      h2 {
+        margin-top: 48px;
+        font-size: 25px;
+      }
+      p,
+      li {
+        color: #bdc4c1;
+      }
+      b {
+        color: #e9e8dc;
+      }
+      .brand {
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      .tag {
+        color: #d9b67c;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+      }
+      .play {
+        display: inline-block;
+        padding: 13px 24px;
+        background: #d9b67c;
+        color: #151a1b;
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+      li {
+        margin-bottom: 12px;
+      }
+      footer {
+        border-top: 1px solid #394140;
+        padding-top: 28px;
+        margin-top: 60px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="brand" href="/">OPENRP.</a>
+      <div class="tag">PUBLIC ALPHA · DESKTOP BROWSER</div>
+      <h1>A city worth playing in.</h1>
+      <p>
+        OpenRP is a free, open-source multiplayer roleplay sandbox inspired by DarkRP. It is an independent
+        project, unaffiliated with Garry’s Mod or Facepunch. Bring a keyboard, a mouse, and a story.
+      </p>
+      <h2>Community rules</h2>
+      <ol>
+        <li>
+          <b>Give conflict a roleplay reason.</b> No random killing, spawn camping, or repeatedly targeting a
+          player to ruin their session.
+        </li>
+        <li>
+          <b>Build fairly.</b> Don’t block public roads, spawns, or other players’ exits. No trapping people
+          with props or using props to bypass fights.
+        </li>
+        <li>
+          <b>Respect the people behind the characters.</b> No harassment, hate speech, threats, doxxing, or
+          sexual content. Keep personal information out of chat and character names.
+        </li>
+        <li>
+          <b>Play without exploits.</b> No cheats, connection spam, impersonating operators, or creating
+          identities to manipulate money or elections.
+        </li>
+      </ol>
+      <p>
+        Operators can remove or ban identities that break these rules. City laws chosen by the mayor are part
+        of roleplay; they cannot override community rules.
+      </p>
+      <h2>What to expect in the alpha</h2>
+      <p>
+        Jobs, shops, property, physics building, printers, elections, combat and arrests work in a shared
+        city, with optional proximity voice. There is no fixed player slot cap. Performance depends on server
+        load. Vehicles and Source-engine assets are not included.
+      </p>
+      <p>
+        Your wallet, inventory, ammunition, props, shops and property return when you sign into your account
+        or reconnect with the same guest browser identity, including after server updates. Props stay in the
+        shared world while you are offline. Jobs resume when a slot is available, and normal gameplay or
+        operator cleanup can still remove items. Updates can briefly interrupt play. Create an account before
+        clearing guest browser data to keep access to that character across browsers. There is no automated
+        forgotten-password recovery.
+      </p>
+      <h2 id="privacy">Privacy</h2>
+      <p>
+        Guest play needs no password, email or payment. Optional accounts need only a username and password.
+        Your browser stores a randomly generated reconnect credential, username or roleplay name, and
+        settings. The server stores your character, inventory, wallet, owned world objects, an internal ID and
+        a hash of that credential so you can return after a refresh or update. Accounts also store a username
+        and salted password hash; plaintext passwords are not stored. Passwords and credential hashes are
+        excluded from public game state and analytics. New accounts initially use their username as their
+        public roleplay name; you can change that name with /rpname. Bans store an identity ID and operator
+        reason.
+      </p>
+      <p>
+        <b>Text chat is logged for 30 days for moderation and troubleshooting.</b> This includes nearby, OOC,
+        advert, action, group, mayor broadcast, text radio and direct-message channels. Logs contain the
+        message, time, public character ID, name, job and channel, plus radio tuning or direct-message
+        recipient where applicable. Operators can search these logs; they are not publicly accessible. Group
+        and direct chat are visible to operators. Keep personal information and passwords out of all chat
+        channels.
+      </p>
+      <p>
+        First-party analytics count visits to the home page, joins, returning character identities, connected
+        playtime, jobs, in-game purchases, deaths and moderation actions. The game also records server
+        performance and traffic totals, including voice traffic counts. Referrers retain only the source
+        hostname, not the full URL. These analytics and text logs are automatically removed after 30 UTC
+        calendar days. They do not contain raw browser credentials, IP addresses or voice audio.
+      </p>
+      <p>
+        Proximity voice starts with the microphone off. Enable it explicitly, allow the browser permission,
+        then hold V while playing to speak to players within 28 metres. Release V to stop. Menus, text chat,
+        leaving the tab and respawning stop transmission. Turn the microphone off in Settings to release the
+        device. Mute individual residents in Tab, or mute all voice in Settings. These community rules also
+        apply to voice; do not harass people or blast disruptive audio.
+      </p>
+      <p>
+        Voice audio passes through the game server and its hosting/network providers and is relayed only to
+        eligible nearby listeners. The game does not record or transcribe it. HTTPS encrypts transport; this
+        is not end-to-end encryption. Other players may independently record conversations. Individual mute
+        preferences are stored in your browser. Avoid sharing private information in voice chat.
+      </p>
+      <p>
+        The hosting and DNS provider (Cloudflare) processes network requests and may keep operational logs
+        including IP addresses. The game uses source IPs temporarily to limit connection spam. There are no
+        advertising trackers or third-party game assets.
+      </p>
+      <p>
+        For a bug report or data request, use the
+        <a href="https://github.com/DevanMetz/openrp/issues" target="_blank" rel="noopener noreferrer"
+          >project’s issue tracker</a
+        >. Share your public roleplay name and approximate time, never your browser credential or sensitive
+        personal information. Use GitHub’s private vulnerability reporting for security issues when available.
+      </p>
+      <a class="play" href="/">Enter the district ↗</a>
+      <footer>
+        OpenRP · MIT licensed · <a href="https://github.com/DevanMetz/openrp">View the source</a>
+      </footer>
+    </main>
+  </body>
+</html>
