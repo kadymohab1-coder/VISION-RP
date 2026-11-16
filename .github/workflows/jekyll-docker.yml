@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Extract VISION RP
 
 on:
   push:
